@@ -27,6 +27,7 @@ local list_conda_envs = function(envs)
         table.insert(env_names, env_name)
         envs[env_name] = env_path
     end
+    envs['base'] = envs['base'] .. '/base'
     return env_names
 end
 
